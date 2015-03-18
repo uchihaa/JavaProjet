@@ -1,0 +1,49 @@
+import java.util.Hashtable;
+import java.util.Iterator;
+import java.util.ListIterator;
+import java.util.Vector;
+
+public class Parking {
+	private String id;
+	private Vector lesSejours;
+	private Porte maPorte;
+	
+	/*Constructor*/
+	Parking(String p_id, Porte p_P){
+		id=p_id;
+		lesSejours = new Vector();
+		maPorte  = p_P;
+	}
+	
+	/*Getter*/
+	public String getId(){
+		return id;
+	}
+	
+	/*Setter*/
+	public void SetSejour(Sejour s){
+		lesSejours.add(s);
+	}
+	
+	public void setPorte(Porte p){
+		maPorte = p;
+	}
+	
+	/*Affichage*/
+	public void Afficher(){
+		System.out.println(this.toString());
+	}
+	
+	public String toString(){
+		String res;
+		res = "Id du Parking : " + id + "/nPorte " + maPorte + "/n";
+		Iterator it = lesSejours.iterator();
+		
+		while(it.hasNext()){
+			res += ((Sejour)it.next()).toString();
+		}
+		res += "\n";
+		return res;
+		
+	}
+}

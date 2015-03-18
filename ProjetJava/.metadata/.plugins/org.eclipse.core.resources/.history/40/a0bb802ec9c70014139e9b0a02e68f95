@@ -1,0 +1,13 @@
+
+public class HorsContact extends Parking {
+	
+	HorsContact(String p_id, Porte p_P) {
+		super(p_id, p_P);
+		// TODO Auto-generated constructor stub
+	}
+
+	public String toString(){
+		return super.toString() + " Hors Contact";
+	}
+	
+}

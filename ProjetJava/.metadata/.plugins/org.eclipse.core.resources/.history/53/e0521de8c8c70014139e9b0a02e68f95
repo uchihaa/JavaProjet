@@ -1,0 +1,22 @@
+public class TestAe {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Zone z1 = new Zone();
+		Porte po1 = new Porte("PO1");
+		Porte po2 = new Porte("PO2");
+		HorsContact p1 = new HorsContact("P1", po1);
+		Contact p2 = new Contact("P2", po2);
+		
+		z1.ajoutParking(p1);
+		z1.ajoutParking(p2);
+		
+		
+		
+	}
+
+}

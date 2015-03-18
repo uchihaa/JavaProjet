@@ -1,0 +1,25 @@
+import java.util.Hashtable;
+import java.util.Iterator;
+import java.util.ListIterator;
+import java.util.Vector;
+
+public class Porte {
+	private String id;
+	
+	
+	/*Constructer*/
+	public Porte(String p_id){
+		id = p_id;
+	}
+	
+	/*Getter*/
+	public String getId(){
+		return id;
+	}
+	
+
+	/*toString*/
+	public String toString(){
+		return "Porte "+id;
+	}
+}

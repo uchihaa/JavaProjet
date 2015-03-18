@@ -1,0 +1,13 @@
+
+public class Contact extends Parking {
+
+	Contact(String p_id, Porte p_P) {
+		super(p_id, p_P);
+		// TODO Auto-generated constructor stub
+	}
+	
+	public String toString(){
+		return super.toString() + " en contact";
+	}
+
+}
