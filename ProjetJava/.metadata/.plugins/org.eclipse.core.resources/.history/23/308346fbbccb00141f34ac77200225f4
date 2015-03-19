@@ -1,25 +1,13 @@
-//Nuyyyyyyyyyyyyy
-
-package Aero;
-
 import java.util.ArrayList;
-import java.util.Iterator;
 
 import Aero.Aeroport;
-import GestionAvion.Avion;
-import GestionAvion.Etat;
-import GestionAvion.Sejour;
-import GestionAvion.Vol;
 import GestionGare.Hall;
-import GestionGare.Parking;
 import GestionGare.ParkingC;
 import GestionGare.ParkingHC;
 import GestionGare.Porte;
 import GestionGare.Zone;
 import GestionGare.ZoneG;
 import GestionGare.ZoneP;
-import Outils.Horaire;
-import Outils.TrancheHoraire;
 
 
 public class Main {
@@ -136,32 +124,6 @@ public class Main {
 		 Aeroport orly = new Aeroport("Orly");
 		 orly.setListeHall(listeDesHalls);
 		 orly.setListeZone(listeDesZones);
-		 
-		 /*Avion*/ 
-		Avion a1 = new Avion("55", "gaou", true);
-		Horaire h1 = new Horaire(13, 10);
-		Etat e1 = null;
-		Vol v1 = new Vol("66", a1, "Toulouse", h1, e1);
-		
-		Avion a2 = new Avion("55", "gaou2", true);
-		Horaire h2 = new Horaire(15, 00);
-		Etat e2 = null;
-		Vol v2 = new Vol("666", a2, "Toulouse", h2, e2);
-		 
-		Sejour s1 = new Sejour(v1,v2);
-		parking16.ajoutSejour(s1);
-		TrancheHoraire TH = new TrancheHoraire(h1, h2);
-		 
-		ArrayList res = null;
-		res = zoneV.parkingLibre(TH);
-		 
-		Iterator it = res.iterator();
-
-		while(it.hasNext()){
-			System.out.println(res.toString());	
-		}
-		
-		 
 	 }
 	
 }

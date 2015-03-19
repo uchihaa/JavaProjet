@@ -1,4 +1,3 @@
-//Gaou
 package Aero;
 
 import java.util.ArrayList;
